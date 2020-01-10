@@ -1,6 +1,8 @@
     #header{
-        .container{
-            padding: 0;
+        @media screen and (min-width:1200px){
+            .container{
+                padding: 0;
+            }
         }
         .border-line{
             border-bottom: 1px solid #0e96ff;
@@ -130,8 +132,22 @@
             @media screen and(max-width:992px){
                 margin-top: 20px;
             }
+            &:before{
+                display: none;
+            }
         }
         .menu-container{
+            @media screen and (max-width:992px){
+                .navbar{
+                    position: fixed;
+                    background-color: #fff;
+                    border-radius: 0.25rem;
+                    z-index: 100;
+                    button:focus{
+                       outline: none;
+                    }
+                }
+            }
             nav{
                 .navbar-nav{
                     justify-content: space-between;
