@@ -1,12 +1,18 @@
 .main-banner-block{
     padding-top: 12px;
+    padding-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
+    background: center / cover url(../images/img1.jpg) no-repeat;
     .ah1{
         margin-bottom: 22px;
         font-style: normal;
         font-size: 38px;
         line-height: 42px;
         font-weight: 900;
+        @media screen and (max-width:576px){
+            font-size: 25px;
+            line-height: 28px;
+        }
     }
     .ah2{
         margin-bottom: 22px;
@@ -28,15 +34,15 @@
         line-height: 14px;
         font-weight: 500;
     }
-    .main-button-block-input{
-        width: 100%;
+    &-input{
+        width: 100%!important;
         height: 40px;
         background-color: transparent;
         border: 2px solid #000;
         border-radius: 68px;
         color: #000;
         @media screen and (min-width:1200px){
-            width: 50%;
+            width: 50%!important;
         }
     }
     .orange-button{
@@ -45,7 +51,7 @@
             width: 230px;
         }
     }
-    .main-banner-block-image{
+    &-image{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,6 +68,9 @@
         .ah2{
             margin-bottom: 11px;
         }
+    }
+    .white-block-second{
+        margin-top: 20px;
     }
 }
 .orange-button{
@@ -92,4 +101,73 @@
 .white-block{
     padding: 36px 28px;
     background-color: #fff;
+}
+.advantages-block{
+    .row{
+        justify-content: center;
+        @media screen and (max-width:576px) {
+            padding: 0px 15px;
+        }
+    }
+    padding: 55px 0px 40px 0px;
+    .ah2{
+        display: block;
+        margin-bottom: 60px;
+        text-align: center;
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 5px;
+        padding: 50px 10px 36px 10px;
+        background-color: #edfbfb;
+        box-shadow: 0px 0px 10px 0px rgba(207, 207, 207, 0.5);
+        img{
+            width: 75px;
+        }
+        p{
+            text-align: center;
+            margin-top: 34px;
+            font-size: 18px;
+            line-height: 22px;
+            font-family: 'Futura PT Book', sans-serif;
+        }
+        @media screen and (max-width:992px){
+            margin-top: 10px;
+        }
+    }
+}
+
+.description-block{
+    &-body{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        h5{
+            font-weight: bold;
+        }
+    }
+    @media screen and (max-width:992px) {
+        .description-block-body{
+            padding: 0px 30px;
+        }
+        img{
+            width: 40%;
+            align-self: center;
+        }
+    }
+    @media screen and (max-width:576px){
+        .media {flex-direction: column;}
+        img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }
