@@ -18,55 +18,28 @@
                 }
             }
         }
-        .dropdown{
+        .custom-select{
             text-align: center;
-            &-toggle{
+            display: block;
+            width: 157px;
+            margin: 0 auto;
+            padding-right: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Futura PT',sans-serif;
+            background:95% center / 10px no-repeat url(../img/keyboard-right-arrow-button.svg);
+            color: #000;
+            box-shadow: none;
+            border: none;
+            cursor: pointer;
+            option{
                 font-size: 18px;
                 font-weight: 600;
                 font-family: 'Futura PT',sans-serif;
-                box-shadow: none;
-                &:after{
-                    width: 10px;
-                    height: 10px;
-                    margin-bottom: -5px;
-                    background:center / cover no-repeat url(../img/keyboard-right-arrow-button.svg);
-                    border: none;
-                    transition: 0.5s;
-                    transform: rotate(90deg);
-                }
-            }
-            &-menu{
-                top: -12px!important;
-                padding: 0;
-                margin: 0;
-                background-color: transparent;
-                border: none;
-                &:hover{
-                    background-color: transparent;
-                }
-            }
-            &.show{
-                .dropdown-toggle{
-                    &:after{
-                        transform: rotate(270deg);
-                    }
-                }
-            }
-            &-item{
-                font-size: 18px;
-                font-weight: 900;
-                font-family: 'Futura PT',sans-serif;
-                color: #a4a4a4;
-                &:active{
-                    background-color: transparent;
-                    color: #000;
-                }
-                &:hover{
-                    background-color: transparent;
-                    color: #000;
-                }
+                background: transparent;
             }
         }
+        
         .logo-link{
             justify-content: center;
             align-items: center;
@@ -160,8 +133,13 @@
         }
         .menu-container{
             nav{
-                a{
-                    padding: 10px;
+                .navbar-nav{
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                padding: 0;
+                li{
+                    padding: 0px;
 	                font-style: normal;
                     font-size: 20px;
                     font-weight: normal;
@@ -169,14 +147,20 @@
                     border-radius: 0;
                     color: #000;
                     &.active{
-                        color: #fff;
-                        background-color: #0090ff;
-                        &:hover{
+                        a{
                             color: #fff;
+                            background-color: #0090ff;
+                            &:hover{
+                                color: #fff;
+                            }
                         }
                     }
-                    &:hover{
-                        color: #0d96ff;
+                    a{
+                        padding: 12px 30px;
+                        color: #000;
+                        &:hover{
+                            color: #0090ff;
+                        }
                     }
                 }
             }
