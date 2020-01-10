@@ -1,0 +1,22 @@
+a{
+	text-decoration: none;
+}
+
+body{
+	color: #000;
+	font-size: 16px;
+	margin: 0;
+	background: #ffffff;
+}
+
+#jGrowl{
+  z-index: 999999;
+}
+
+*:focus{
+	outline: none;
+}
+
+.hide{
+	display: none;
+}
