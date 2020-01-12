@@ -44,6 +44,9 @@
         @media screen and (min-width:1200px){
             width: 50%!important;
         }
+        @media screen and (max-width:1200px){
+           margin-right: 0!important;
+        }
     }
     .orange-button{
         width: 100%;
@@ -83,9 +86,10 @@
     font-family: 'Circe',sans-serif;
     color: #000!important;
     background-color: #ffbd57!important;
-    border: none!important;
+    border:2px solid #ffbd57!important;
     border-radius: 68px;
     box-shadow: none!important;
+    box-sizing: border-box;
     cursor: pointer;
     &:before{
         content: "";
@@ -96,6 +100,13 @@
         background-position: center;
         background-size: cover;
         background-image: url(../img/call-answer.svg);
+    }
+    &:hover{
+        background-color: #fff!important;
+        border:2px solid #0d96ff!important;
+        &:before{
+            background-image: url(../img/call-answer-blue.svg);
+        }
     }
 }
 .white-block{
