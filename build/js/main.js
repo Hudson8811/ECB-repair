@@ -1,4 +1,3 @@
-/* my scripts */
 var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -33,4 +32,29 @@ var mySwiper = new Swiper ('.swiper-container', {
 }
 $(document).scroll(function(){
   toggleHeader();
+})
+
+var mySwiper = new Swiper ('.swiper-container-2', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  breakpoints: {
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 8,
+      },
+    }
 })

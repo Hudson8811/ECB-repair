@@ -49,6 +49,10 @@
         &:hover{
             box-shadow: none;
         }
+        &:focus{
+            border: 2px solid #c9c7c3;
+            box-shadow: none;
+        }
     }
     button:not(.close){
         display: block;
