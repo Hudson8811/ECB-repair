@@ -9,7 +9,7 @@
     padding-top: 12px;
     padding-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
-    background: center / cover url(../images/img1.jpg) no-repeat;
+    background: center / cover url(../images/img1.WebP) no-repeat;
     .ah1{
         margin-bottom: 22px;
         font-style: normal;
@@ -318,9 +318,11 @@
         height: 100%;
         display: block;
         text-decoration: none;
+        transition: all 0.5s;
     }
     td:nth-child(3):hover{
         background-color: #0e96ff;
+        transition: all 0.5s;
         cursor: pointer;
         a{
             color: #fff;
