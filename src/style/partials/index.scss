@@ -95,6 +95,7 @@
     border-radius: 68px;
     box-shadow: none!important;
     box-sizing: border-box;
+    transition: all 0.5s;
     cursor: pointer;
     &:before{
         content: "";

@@ -6,6 +6,7 @@
         }
         &-item{
             margin-bottom: 8px;
+            background-color: #edfbfb;
             transition: all 0.5s;
             .ah4{
                 display: block;
@@ -22,6 +23,10 @@
             margin: 0;
             padding: 45px 0px 50px 0px;
             text-align: left;
+            @media screen and (max-width:576px ) {
+                text-align: center;
+                padding: 20px 0;
+            }
         }
         .reviews-button{
             height: 45px;
@@ -45,6 +50,10 @@
             }
             &:hover{
                 text-decoration: none;
+            }
+            @media screen and (max-width:576px ) {
+                margin: 0 auto;
+                margin-bottom: 10px;
             }
 
         }
