@@ -7,6 +7,7 @@
         url('./fonts/FuturaPT-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
         url('./fonts/FuturaPT-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -30,6 +32,7 @@
         url('./fonts/FuturaPTCond-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -41,6 +44,7 @@
         url('./fonts/FuturaPT-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -52,6 +56,7 @@
         url('./fonts/FuturaPTCond-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -64,6 +69,7 @@
         url('./fonts/FuturaPT-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -75,6 +81,7 @@
         url('./fonts/FuturaPTCond-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -86,6 +93,7 @@
         url('./fonts/FuturaPT-Demi.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -97,6 +105,7 @@
         url('./fonts/FuturaPTCond-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -108,6 +117,7 @@
         url('./fonts/FuturaPT-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -119,6 +129,7 @@
         url('./fonts/FuturaPT-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 
