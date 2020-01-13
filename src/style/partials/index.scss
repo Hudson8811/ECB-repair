@@ -1,3 +1,10 @@
+@media screen and (max-width:576px){
+    .ah2{
+        font-size: 20px!important;
+        margin: 5px;
+        padding: 5px;
+    }
+}
 .main-banner-block{
     padding-top: 12px;
     padding-bottom: 20px;
@@ -224,6 +231,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.5s;
             cursor: pointer;
             &:hover{
                 background-color: #edfbfb;
@@ -383,8 +391,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: fff;
+        background-color: #fff;
         box-shadow: 0px 0px 24px 2px #edfbfb;
+        transition: all 0.5s;
         cursor: pointer;
             &:hover{
                 background-color: #0e96ff;
@@ -422,6 +431,7 @@
         align-items: center;
         padding: 0 10px;
         box-sizing: border-box;
+        transition: all 0.5s;
         cursor: pointer;
         > div{
             height: 50px;

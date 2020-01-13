@@ -1,4 +1,9 @@
     #header{
+        @media screen and (max-width:992px) {
+            .navbar-collapse{
+                width: 100vw;
+            }
+        }
         z-index: 20;
         background-color: #fff;
         @media screen and (min-width:1200px){
@@ -63,7 +68,7 @@
                     font-size: 25px;
                     line-height: 29px;
                     font-weight: 900;
-                    letter-spacing: -4px;
+                    letter-spacing: -1px;
                     color: #0987d4;
                 }
                 &:nth-child(2){
@@ -98,6 +103,7 @@
                 box-sizing: border-box;
                 border: 3px solid #0e96ff;
                 border-radius: 15.5px;
+                transition: all 0.5s;
             }
             span{
                 font-style: normal;
@@ -127,13 +133,20 @@
             @media screen and (max-width:992px){
                 .navbar{
                     position: fixed;
-                    left: 10px;
-                    top: 10px;
+                    left: 0px;
+                    top: 0px;
                     background-color: #fff;
                     border-radius: 0.25rem;
                     z-index: 100;
                     button:focus{
                        outline: none;
+                    }
+                    .drop-ul{
+                    }
+                    .nav-item:hover{
+                        .drop-ul{
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -170,7 +183,7 @@
                     }
                     &:hover{
                         > .drop-ul{
-                            display: block;
+                            transform: scale(1);
                         }
                     }
                 }
@@ -179,13 +192,16 @@
                 position: absolute;
                 left: -50%;
                 z-index: 9;
-                display: none;
+                display: block;
                 width: 252px;
                 border: 1px solid #0d96ff;
                 box-sizing: border-box;
                 list-style: none;
+                transition: all 0.5s;
+                transform: scale(0);
                 &-li{
                     position: relative;
+                    transition: all 0.5s;
                     a{
                         display: block;
                         width: 100%;
@@ -196,6 +212,7 @@
                         color:#000;
                         box-sizing: border-box;
                         text-decoration:none;
+                        transition: all 0.5s;
                         cursor: pointer;
                         &:hover{
                             background: #0d96ff;
