@@ -133,7 +133,7 @@
             @media screen and (max-width:992px){
                 .navbar{
                     position: fixed;
-                    left: 0px;
+                    right: 0px;
                     top: 33px;
                     background-color: #fff;
                     border-radius: 0.25rem;
@@ -401,17 +401,12 @@
                 .phone-link{
                     margin-top: 0;
                     padding: 20px 0;
+                    justify-content: left;
                 }
+            }
+            .logo-link{
+                padding-bottom: 10px;
+                justify-content: left;
             } 
-        }
-    }
-    @media screen and (max-width:576px){
-        #header .logo-link{
-            .d-block{
-                display: none!important;
-            }
-            img{
-                height: 70px;
-            }
         }
     }
