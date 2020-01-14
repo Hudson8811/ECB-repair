@@ -134,14 +134,12 @@
                 .navbar{
                     position: fixed;
                     left: 0px;
-                    top: 0px;
+                    top: 33px;
                     background-color: #fff;
                     border-radius: 0.25rem;
                     z-index: 100;
                     button:focus{
                        outline: none;
-                    }
-                    .drop-ul{
                     }
                     .nav-item:hover{
                         .drop-ul{
@@ -227,7 +225,7 @@
             }
         }
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:992px){
         #header.header_min{
             position: fixed;
             top: 0;
@@ -328,5 +326,82 @@
                     }
                 }
             }
+        }
+    }
+    @media screen and (max-width:1200px) and (min-width:992px){
+        #header .col-lg{
+            margin-top: 0;
+        }
+        #header.header_min .logo-link{
+            justify-content: center;
+        }
+        #header.header_min .phone-link span{
+            font-size: 14px;
+        }
+        #header.header_min .menu-container{
+            max-width: 666px;
+            margin-left: -333px;
+        }
+        #header.header_min .menu-container nav .nav-item{
+            font-size: 12px;;
+        }
+    } 
+    @media screen and (max-width:992px){
+        #header .col-lg{
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(4){
+                display: none;
+            }
+            &:nth-child(5){
+                display: none;
+            }
+            .menu-container {
+                .navbar{
+                    top: 53px;
+                }
+            }
+        }
+        #header.header_min{
+            position: fixed;
+            height: auto;
+            width: 100%;
+            background-color: #fff;
+            border-top: 1px solid #0e96ff;
+            border-bottom: 1px solid #0e96ff;
+        }
+    }
+
+    @media screen and (max-width:765px){
+        #header {
+            .col-lg{
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+            .header-links{
+                padding: 5px;
+            }
+            .menu-container {
+                .navbar{
+                    top: 20px;
+                }
+            }
+            &.header_min{
+                .col-lg{
+                    margin-top: 0;
+                    &:nth-child(1){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        display: block;
+                    }
+                } 
+                .phone-link{
+                    margin-top: 0;
+                    padding: 20px 0;
+                }
+            } 
         }
     }

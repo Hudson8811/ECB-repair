@@ -25,7 +25,7 @@ var mySwiper = new Swiper ('.swiper-container', {
 
   function toggleHeader(){
     var scroll_status = $(document).scrollTop();
-    if(scroll_status > 143)
+    if(scroll_status > 70)
         $("#header").addClass("header_min");
     else
         $("#header").removeClass("header_min");
