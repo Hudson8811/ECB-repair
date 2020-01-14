@@ -1,7 +1,7 @@
     #header{
         @media screen and (max-width:992px) {
             .navbar-collapse{
-                width: 100vw;
+                width: calc(100vw - 103px);
             }
             .navbar-toggler{
                 margin-left: auto;
@@ -135,8 +135,8 @@
         .menu-container{
             @media screen and (max-width:992px){
                 .navbar{
-                    position: fixed;
-                    right: 0px;
+                    position: absolute;
+                    right: 15px;
                     top: 33px;
                     background-color: #fff;
                     border-radius: 0.25rem;
