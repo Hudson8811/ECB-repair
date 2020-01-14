@@ -405,3 +405,13 @@
             } 
         }
     }
+    @media screen and (max-width:576px){
+        #header .logo-link{
+            .d-block{
+                display: none!important;
+            }
+            img{
+                height: 70px;
+            }
+        }
+    }
