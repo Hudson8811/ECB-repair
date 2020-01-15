@@ -44,11 +44,19 @@
     &-input{
         width: 100%!important;
         height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Circe', sans-serif;
         background-color: transparent;
         border: 2px solid #000;
         border-radius: 68px;
         color: #000;
         box-shadow: none;
+        
+        &::-webkit-input-placeholder { color: #000000; }
+        &::-moz-placeholder          { color: #000000; } /* Firefox 19+ */
+        &:-moz-placeholder           { color: #000000; } /* Firefox 18- */
+        &:-ms-input-placeholder      { color: #000000; }
         &:focus{
             box-shadow: none;
             border-color: #000;
@@ -58,6 +66,9 @@
         }
         @media screen and (max-width:1200px){
            margin-right: 0!important;
+        }
+        &:focus{
+            color:#000;
         }
     }
     .orange-button{
@@ -133,7 +144,7 @@
             padding: 0px 15px;
         }
     }
-    padding: 55px 0px 40px 0px;
+    padding: 55px 0px 5px 0px;
     .ah2{
         display: block;
         margin-bottom: 60px;
@@ -208,6 +219,7 @@
 
 .brand-block{
     padding: 75px 75px;
+    padding-bottom: 0;
     @media screen and (max-width:576px){
         padding:0;
     }
@@ -235,7 +247,7 @@
             cursor: pointer;
             &:hover{
                 background-color: #edfbfb;
-                box-shadow: 0px 0px 24px 2px #edfbfb;
+                box-shadow: 0px 0px 24px 2px rgba(13, 150, 255, 0.2);
             }
         }
         .swiper-button-next,.swiper-button-prev{
@@ -455,7 +467,7 @@
         }
         &:hover{
             background-color: #edfbfb;
-            box-shadow: 0px 0px 24px 2px #edfbfb;
+            box-shadow: 0px 0px 24px 2px rgba(13, 150, 255, 0.2);
         }
         &:after{
             content: "";
@@ -491,6 +503,16 @@
         @media screen and (min-width:1200px){
             padding-left:0px;
             padding-right:0px;
+        }
+        .row{
+            .col-12{
+                &:nth-child(1){
+                    padding-right: 0px;
+                }
+                &:nth-child(2){
+                    padding-left: 0px;
+                }
+            }
         }
     }
     .ah2{

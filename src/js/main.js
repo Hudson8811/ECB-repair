@@ -58,3 +58,16 @@ var mySwiper = new Swiper ('.swiper-container-2', {
       },
     }
 })
+
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+
+$(document).ready(function() {
+  $("input[name='phone']").mask(" +7 (999) 999-99-99");
+});
+
+$('.burger').click(function() {
+  $(this).toggleClass('active');
+  $('.fix-container').toggleClass('active');
+});

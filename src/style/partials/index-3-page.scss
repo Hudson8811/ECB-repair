@@ -10,7 +10,6 @@
             transition: all 0.5s;
             .ah4{
                 display: block;
-                padding-right: 20px;
             }
             &:hover{
                 box-shadow: 0 0 20px  rgba(0, 0, 0, 0.25);
@@ -46,7 +45,7 @@
                 height: 22px;
                 width: 24px;
                 margin-right: 11px;
-                background: center / auto url(../../img/copywriting.svg) no-repeat;
+                background: center / auto url(../img/copywriting.svg) no-repeat;
             }
             &:hover{
                 text-decoration: none;
@@ -64,6 +63,18 @@
             &:after{
                 right: -32%;
             }
+        }
+        &-name{
+            font-size: 18px;
+        }
+        &-date{
+            font-size: 15px;
+        }
+        .ah3{
+            font-size: 16px;
+        }
+        .ah4{
+            font-size: 14px;
         }
     }
 }
