@@ -281,7 +281,6 @@
             align-items: center;
             justify-content: center;
             transition: all 0.5s;
-            cursor: pointer;
             @media screen and (max-width:768px){
                 height: 70px;
             }
@@ -567,7 +566,6 @@
         padding: 40px 10px;
         box-sizing: border-box;
         transition: all 0.5s;
-        cursor: pointer;
         > div{
             height: 50px;
         }

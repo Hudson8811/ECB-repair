@@ -32,7 +32,7 @@
         line-height: 21px;
         font-weight: 500;
     }
-    input, button:not(.close){
+    input,a, button:not(.close){
         height: 44px;
         width: 100%;
         max-width: 250px;
@@ -58,9 +58,11 @@
             box-shadow: none;
         }
     }
-    button:not(.close){
-        display: block;
+    a, button:not(.close){
+        display: flex;
         margin:0 auto;
+        justify-content: center;
+        align-items: center;
         line-height: 20px;
         border: none;
         color: #fff;
