@@ -1,27 +1,4 @@
-var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        576: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        992: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 5,
-          spaceBetween: 0,
-        },
-      }
-  })
+
 
   function toggleHeader(){
     var scroll_status = $(document).scrollTop();
@@ -34,30 +11,7 @@ $(document).scroll(function(){
   toggleHeader();
 })
 
-var mySwiper = new Swiper ('.swiper-container-2', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-  breakpoints: {
-      576: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-      },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 8,
-      },
-    }
-})
+
 
 $(document).ready(function() {
   $('select').niceSelect();
@@ -73,4 +27,46 @@ $('.burger').click(function() {
 });
 $('.show-btn').click(function() {
   $('.not-show').toggleClass('hide');
+});
+
+
+
+var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1920: {
+      slidesPerView: 3,
+      spaceBetween: 8,
+    },
+  }
+});
+
+var swiper = new Swiper('.swiper-container-2', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    1920: {
+      slidesPerView: 2,
+      spaceBetween: 8,
+    },
+  }
 });

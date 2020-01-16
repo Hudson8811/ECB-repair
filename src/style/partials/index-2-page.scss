@@ -79,6 +79,7 @@
         }
         .swiper-container-2{
             padding-bottom: 104px;
+            width: 100%;
         }
         .ah2{
             display: block;
@@ -95,7 +96,6 @@
             .row{
                 align-items: center;
                 @media screen and (max-width:576px) {
-                    flex-direction: column;
                     .reviews-block-avatar{
                         margin: 0 auto;
                         margin-bottom: 10px;
@@ -153,6 +153,7 @@
             font-weight: bold;
             color: #0090ff;
             cursor: pointer;
+            background-size: 14px;
             &:after{
                 font-size: 19px;
             }

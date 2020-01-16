@@ -376,7 +376,10 @@
                         }
                     }
                     a{
-                        padding: 12px 30px;
+                        padding: 11px 30px;
+                        @media screen and (max-width:1200px){
+                            padding: 12px 30px;
+                        }
                         color: #000;
                         &:hover{
                             color: #0090ff;
