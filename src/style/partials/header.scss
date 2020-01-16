@@ -1,4 +1,6 @@
     #header{
+        position: sticky;
+        top:0;
        .fix-container > .container {
             position: relative;
         }
@@ -9,11 +11,16 @@
                     display: none;
                 }
                 .header-links{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                     .col-lg{
+                        &:nth-child(1){
+                            margin-top: 0;
+                        }
                         &:nth-child(2){
                             margin-top: 0;
                             padding-left: 0;
-                            @media screen and (max-width:576px){
+                            @media screen and (max-width:768px){
                                 display: none;
                             }
                         }
@@ -41,7 +48,7 @@
                 .burger{
                     position: absolute;
                     right: 0;
-                    top: 40px;
+                    top: 20px;
                     width: 30px;
                     height: 30px;
                     display: flex;
@@ -88,6 +95,9 @@
                             display: flex;
                             justify-content:flex-start;
                             align-items: center;
+                            .nice-select{
+                                margin-left: 0;
+                            }
                         }
                         &:nth-child(3){
                             display: flex;
@@ -250,6 +260,7 @@
                 margin-top: -10px;
                 background: transparent;
                 box-shadow: none;
+                background-color: #fff;
             }
         }
         
@@ -419,9 +430,7 @@
     }
     @media screen and (min-width:992px){
         #header.header_min{
-            position: fixed;
-            top: 0;
-            height: 47px;
+            height: 43px;
             width: 100%;
             background-color: #fff;
             border-top: 1px solid #0e96ff;
@@ -564,7 +573,7 @@
         }
     }
 
-    @media screen and (max-width:765px){
+    @media screen and (max-width:768px){
         #header {
             .col-lg{
                 &:nth-child(3){
@@ -575,7 +584,6 @@
                 padding: 15px;
             }
             .logo-link{
-                padding-bottom: 10px;
                 justify-content: left;
             } 
         }

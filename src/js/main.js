@@ -12,7 +12,7 @@ var mySwiper = new Swiper ('.swiper-container', {
           slidesPerView: 1,
           spaceBetween: 0,
         },
-        768: {
+        992: {
           slidesPerView: 3,
           spaceBetween: 20,
         },
@@ -70,4 +70,7 @@ $(document).ready(function() {
 $('.burger').click(function() {
   $(this).toggleClass('active');
   $('.fix-container').toggleClass('active');
+});
+$('.show-btn').click(function() {
+  $('.not-show').toggleClass('hide');
 });
