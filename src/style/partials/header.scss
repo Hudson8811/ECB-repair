@@ -294,7 +294,7 @@
             }
         }
         .phone-link{
-            min-width: 202px;
+            min-width: 188px;
         }
         .phone-link, .mail-link{
             justify-content: center;
@@ -556,6 +556,10 @@
         }
     } 
     @media screen and (max-width:992px){
+        #header{
+            border-top: 1px solid #0e96ff;
+            border-bottom: 1px solid #0e96ff;
+        }
         #header .col-lg{
             &:nth-child(1){
                 padding: 0;
@@ -567,12 +571,10 @@
             }
         }
         #header.header_min{
-            position: fixed;
+            position: sticky;
             height: auto;
             width: 100%;
             background-color: #fff;
-            border-top: 1px solid #0e96ff;
-            border-bottom: 1px solid #0e96ff;
         }
     }
 

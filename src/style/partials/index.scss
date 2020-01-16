@@ -336,9 +336,13 @@
             }
         }
         .mobile-btn{
+            width: 100%;
             display: table-row;
+            td{
+                width: 100%;
+            }
             a{
-                text-align: left;
+                text-align: center;
             }
         }
     }
