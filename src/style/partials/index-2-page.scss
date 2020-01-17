@@ -92,6 +92,9 @@
         &-row {
             position: relative;
             padding: 0px 35px;
+            @media screen and (max-width:576px) {
+                padding: 0 15px;
+            }
         }
 
         .swiper-container-2 {
