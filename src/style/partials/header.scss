@@ -5,7 +5,7 @@
             position: relative;
         }
         @media screen and (max-width:992px) {
-          
+
             .fix-container{
                 .menu-container{
                     display: none;
@@ -110,7 +110,7 @@
                         }
                         &:nth-child(4){
                             display: flex;
-                            
+
                             a{
                                 width: 100%;
                                 justify-content: flex-start;
@@ -124,7 +124,7 @@
                             }
                         }
                     }
-                    
+
                 }
                 .menu-container{
                     display: block;
@@ -156,7 +156,7 @@
                     .burger{
                         right: 15px;
                     }
-                    .menu-container{ 
+                    .menu-container{
                     padding: 0;
                     .navbar-menu .navbar-nav{
                         flex-direction: column!important;
@@ -179,7 +179,7 @@
                 display: block;
                 background-color:#0e96ff;
                 @media screen and (max-width:992px){
-                    display: none;   
+                    display: none;
                 }
             }
             &:after{
@@ -192,7 +192,7 @@
                 display: block;
                 background-color:#0e96ff;
                 @media screen and (max-width:992px){
-                    display: none;   
+                    display: none;
                 }
             }
         }
@@ -263,7 +263,7 @@
                 background-color: #fff;
             }
         }
-        
+
         .logo-link{
             justify-content: left;
             align-items: center;
@@ -357,7 +357,7 @@
                     justify-content: space-between;
                 }
                 padding: 0;
-                li:not(.drop-ul-li){ 
+                li:not(.drop-ul-li){
                     position: relative;
                     padding: 0px;
 	                font-style: normal;
@@ -403,6 +403,8 @@
                 list-style: none;
                 transition: all 0.5s;
                 transform: scale(0);
+                transform-origin: top;
+
                 &-li{
                     position: relative;
                     transition: all 0.5s;
@@ -492,7 +494,7 @@
                         font-size: 14px;
                     }
                 }
-                
+
             }
             .fix-container:after{
                 display: none;
@@ -554,7 +556,7 @@
         #header.header_min .menu-container nav .nav-item{
             font-size: 12px;;
         }
-    } 
+    }
     @media screen and (max-width:992px){
         #header{
             border-top: 1px solid #0e96ff;
@@ -590,7 +592,7 @@
             }
             .logo-link{
                 justify-content: left;
-            } 
+            }
         }
     }
     @media screen and (max-width:1200px) and (min-width:992px) {

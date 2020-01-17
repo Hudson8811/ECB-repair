@@ -1,31 +1,31 @@
 
 
-  function toggleHeader(){
-    var scroll_status = $(document).scrollTop();
-    if(scroll_status > 70)
-        $("#header").addClass("header_min");
-    else
-        $("#header").removeClass("header_min");
+function toggleHeader() {
+  var scroll_status = $(document).scrollTop();
+  if (scroll_status > 70)
+    $("#header").addClass("header_min");
+  else
+    $("#header").removeClass("header_min");
 }
-$(document).scroll(function(){
+$(document).scroll(function () {
   toggleHeader();
 })
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('select').niceSelect();
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $("input[name='phone']").mask(" +7 (999) 999-99-99");
 });
 
-$('.burger').click(function() {
+$('.burger').click(function () {
   $(this).toggleClass('active');
   $('.fix-container').toggleClass('active');
 });
-$('.show-btn').click(function() {
+$('.show-btn').click(function () {
   $('.not-show').toggleClass('hide');
 });
 
@@ -71,15 +71,15 @@ var swiper = new Swiper('.swiper-container-2', {
   }
 });
 
-$(function(){
+$(function () {
 
   // #modal_1 - селектор 1 модального окна
   // #modal_2 - селектор 2 модального окна, которое необходимо открыть из первого
-  var two_modal = function(id_modal_1,id_modal_2) {
+  var two_modal = function (id_modal_1, id_modal_2) {
     // определяет, необходимо ли при закрытии текущего модального окна открыть другое
     var show_modal_2 = false;
     // при нажатии на ссылку, содержащей в качестве href селектор модального окна
-    $('a[href="' + id_modal_2 + '"]').click(function(e) {
+    $('a[href="' + id_modal_2 + '"]').click(function (e) {
       e.preventDefault();
       show_modal_2 = true;
       // скрыть текущее модальное окно
@@ -92,7 +92,18 @@ $(function(){
         $(id_modal_2).modal('show');
       }
     })
-  
-  }('#exampleModal','#exampleModal-2');
-  
+
+  }('#exampleModal', '#exampleModal-2');
+
+});
+
+
+$(document).ready(function () {
+  $('.dispaly-ok-on-send').submit(function (e) {
+    e.preventDefault();
+    $('#exampleModal-2').modal('show');
+
+    //код для отправки формы тут должен будет быть
+
   });
+});

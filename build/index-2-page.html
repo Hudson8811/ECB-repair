@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" >
-    <link href="css/main.css" rel="stylesheet" > 
+    <link href="css/main.css" rel="stylesheet" >
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
@@ -154,10 +154,10 @@
         <div class="row" >
           <div class="col-lg-6 white-block white-block-second main-banner-block-form" >
             <span class="ah2 d-block" >Заполните форму и мы Вам перезвоним</span>
-            <form class="form-inline" >
+            <form class="form-inline dispaly-ok-on-send" method="send" >
               <label class="sr-only" for="inlineFormInputName2" >Name</label>
-              <input type="text" name="phone" class="form-control mb-2 mr-sm-2 main-banner-block-input" id="inlineFormInputName2" placeholder="Ваш номер" >          
-              <button type="submit" data-toggle="modal" data-target="#exampleModal-2" class="btn btn-primary mb-2 orange-button " >Заказать звонок</button>
+              <input type="text" name="phone" class="form-control mb-2 mr-sm-2 main-banner-block-input" id="inlineFormInputName2" placeholder="Ваш номер" >
+              <button type="submit" class="btn btn-primary mb-2 orange-button " >Заказать звонок</button>
             </form>
             <span class="ah4 d-block" >Нажимая кнопку “У меня сломался ПК”, Вы соглашаетесь на обработку Ваших персональных данных.</span>
           </div>
@@ -365,7 +365,7 @@
                     <div class="col" >
                       <span class="ah3" >Починили мне ноутбук</span>
                       <span class="ah4" >Просто безумие!
-                        Я не успела присесть в сервисе, а мне уже сказали диагноз поломки моего ноутбука... 
+                        Я не успела присесть в сервисе, а мне уже сказали диагноз поломки моего ноутбука...
                         А не успела я попить чай, они его починили)) </span>
                     </div>
                   </div>
@@ -388,7 +388,7 @@
                     <div class="col" >
                       <span class="ah3" >Починили мне ноутбук</span>
                       <span class="ah4" >Просто безумие!
-                        Я не успела присесть в сервисе, а мне уже сказали диагноз поломки моего ноутбука... 
+                        Я не успела присесть в сервисе, а мне уже сказали диагноз поломки моего ноутбука...
                         А не успела я попить чай, они его починили)) </span>
                     </div>
                   </div>
@@ -411,7 +411,7 @@
                     <div class="col" >
                       <span class="ah3" >Починили мне ноутбук</span>
                       <span class="ah4" >Просто безумие!
-                        Я не успела присесть в сервисе, а мне уже сказали диагноз поломки моего ноутбука... 
+                        Я не успела присесть в сервисе, а мне уже сказали диагноз поломки моего ноутбука...
                         А не успела я попить чай, они его починили)) </span>
                     </div>
                   </div>
@@ -432,9 +432,9 @@
         <div class="row" >
           <div class="col-12 col-lg-6 col-xl-4" >
             <div class="form-block-right" >
-              <span class="ah2" >Выезд мастера на дом 
+              <span class="ah2" >Выезд мастера на дом
                 бесплатно</span>
-              <form>
+              <form class="dispaly-ok-on-send">
                 <div class="form-group row" >
                   <div class="col-sm-12" >
                     <input type="email" class="form-control" id="inputEmail3" placeholder="Ваше имя" >
@@ -450,8 +450,8 @@
                     <button type="submit" data-toggle="modal" data-target="#exampleModal-2" class="btn btn-primary orange-button" >Перезвоните мне</button>
                   </div>
                 </div>
-                <p>Нажимая кнопку «Оставить заявку», 
-                  вы даете согласие на обработку ваших 
+                <p>Нажимая кнопку «Оставить заявку»,
+                  вы даете согласие на обработку ваших
                   персональных данных.</p>
               </form>
             </div>
@@ -464,7 +464,7 @@
         </div>
       </div>
     </div>
-  </div>           
+  </div>
   <!-- FIRST-PAGE ENDS -->
 <!-- BEGIN FOOTER -->
 <footer id="footer" >
@@ -525,7 +525,7 @@
         </form>
       </div>
       <div class="modal-footer" >
-        <p>Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку 
+        <p>Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку
           Ваших персональных данных.</p>
       </div>
     </div>
@@ -545,7 +545,7 @@
       </div>
       <div class="modal-body" >
         <form>
-          <button type="submit" class="btn btn-primary alert-s" >Хорошо</button>
+          <button  class="btn btn-primary alert-s"  data-dismiss="modal">Хорошо</button>
         </form>
       </div>
       <div class="modal-footer" >
