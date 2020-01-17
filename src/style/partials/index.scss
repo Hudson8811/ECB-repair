@@ -868,7 +868,24 @@
 
 
 
-@media screen and (min-width:993px) {
+@media screen and (max-width:992px) {
+    .wark-block{
+        .container{
+            .row{
+                .col-12{
+                    &:last-child{
+                        .wark-block-item{
+                            div{
+                                img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -895,17 +912,6 @@
 
     .wark-block {
         padding-bottom: 30px;
-        .col-12{
-            &:last-child{
-                .wark-block-item{
-                    div{
-                        img{
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-        }
     }
 
     .wark-block-item {
@@ -935,5 +941,15 @@
     &.hide{
         opacity: 0;
         pointer-events: none;
+    }
+}
+.not-show{
+    visibility:collapse;
+    transform: scale(0);
+    transform-origin: left;
+    transition: all .5s;
+    &.active{
+        visibility: visible;
+        transform: scale(1);
     }
 }

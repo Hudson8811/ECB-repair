@@ -30,7 +30,7 @@ $('.burger').click(function () {
   $('.fix-container').toggleClass('active');
 });
 $('.show-btn').click(function () {
-  $('.not-show').toggleClass('hide');
+  $('.not-show').toggleClass('active');
   $(this).addClass('hide');
 
 });
