@@ -262,6 +262,11 @@
 }
 
 .description-block {
+    @media screen and (max-width:576px){
+        .container{
+            width: calc(100% - 30px);
+        }
+    }
     .media-body {
         flex: auto;
     }
@@ -890,6 +895,17 @@
 
     .wark-block {
         padding-bottom: 30px;
+        .col-12{
+            &:last-child{
+                .wark-block-item{
+                    div{
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .wark-block-item {
@@ -900,6 +916,7 @@
     .wark-block-item p {
         margin-top: 15px;
         margin-bottom: 10px;
+
     }
 
     .description-block img {

@@ -82,6 +82,7 @@ var swiper = new Swiper('.swiper-container-brands', {
 });
 
 var swiper = new Swiper('.swiper-container-2', {
+  autoHeight:true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
