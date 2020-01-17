@@ -40,7 +40,7 @@
                   </div>
                   <div class="col-sm-12 col-lg col-md-4 phone" >
                       <a href="#" class="d-flex phone-link" >
-                          <div class="d-flex">       
+                          <div class="d-flex"  data-toggle="modal" data-target="#exampleModal">
                               <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                   width="15px" height="14px" viewBox="0 0 348.077 348.077" style="enable-background:new 0 0 348.077 348.077;"
                                   xml:space="preserve" >
@@ -222,7 +222,7 @@
       <div class="container" >
         <span class="ah2" >Ремонтируем абсолютно все бренды ноутбуков:</span>
                 <!-- Slider container -->
-          <div class="swiper-container" >
+          <div class="swiper-container swiper-container-brands" >
                 <!-- Slides wrapper -->
             <div class="swiper-wrapper" >
                     <!-- Slides -->
@@ -310,6 +310,23 @@
                   <a href="#" >Заказать</a>
                 </td>
               </tr>
+
+              <tr class="not-show hide" >
+                  <th scope="row" >Девайс стал жертвой вирусной атаки</th>
+                  <td>от 399 руб.</td>
+                  <td>
+                    <a href="#" >Заказать</a>
+                  </td>
+                </tr>
+
+              <tr class="not-show hide" >
+                  <th scope="row" >Девайс стал жертвой вирусной атаки</th>
+                  <td>от 399 руб.</td>
+                  <td>
+                    <a href="#" >Заказать</a>
+                  </td>
+                </tr>
+
               <tr class="hide mobile-btn" >
                 <td colspan="2">
                   <a href="#" >Заказать</a>
@@ -493,7 +510,7 @@
                     <button type="submit" data-toggle="modal" data-target="#exampleModal-2" class="btn btn-primary orange-button" >Перезвоните мне</button>
                   </div>
                 </div>
-                <p>Нажимая кнопку «Оставить заявку»,
+                <p>Нажимая кнопку «Перезвоните мне»,
                   вы даете согласие на обработку ваших
                   персональных данных.</p>
               </form>
@@ -542,7 +559,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Modal -->
 <div class="modal fade exampleModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-  <div class="modal-dialog" role="document" >
+  <div class="modal-dialog modal-dialog-centered" role="document" >
     <div class="modal-content" >
       <div class="modal-header" >
         <h5 class="modal-title" id="exampleModalLabel" >Связь с нами</h5>
@@ -572,7 +589,7 @@
 <!-- Modal -->
 <!-- Modal -->
 <div class="modal fade exampleModal" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-  <div class="modal-dialog" role="document" >
+  <div class="modal-dialog modal-dialog-centered" role="document" >
     <div class="modal-content" >
       <div class="modal-header" >
         <h5 class="modal-title" id="exampleModalLabel-2" >Спасибо!</h5>
