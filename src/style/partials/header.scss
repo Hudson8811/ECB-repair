@@ -4,6 +4,9 @@
         height: auto;
         overflow: hidden;
         max-height: 200px;
+        @media screen and (max-width:768px){
+            max-height: none;
+        }
        // transition: max-height .4s;
         .fix-container>.container {
             position: relative;

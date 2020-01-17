@@ -71,6 +71,9 @@
         line-height: 17px;
         font-weight: 300;
         letter-spacing: 1px;
+        @media screen and(max-width:576px){
+            padding-right: 0;
+        }
     }
 
     .ah4 {
@@ -868,7 +871,9 @@
     .main-banner-block {
         background: none !important;
     }
-
+    .main-banner-block-input{
+        text-align: center;
+    }
     .main-banner-block .white-block-second {
         margin-top: 0;
         padding-top: 0;
