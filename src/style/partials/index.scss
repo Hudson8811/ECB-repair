@@ -888,7 +888,18 @@
     }
 
 }
-
+@media screen and(max-width:991px){
+    .description-block {
+        .media{
+            flex-direction: column;
+        }
+        img {
+        width: calc(100% - 30px);
+        box-sizing: border-box;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }}
+}
 @media screen and (max-width:575px) {
     .main-banner-block {
         background: none !important;
@@ -925,12 +936,6 @@
 
     }
 
-    .description-block img {
-        width: calc(100% - 30px);
-        box-sizing: border-box;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
 
     .form-block p {
         font-size: 9px;

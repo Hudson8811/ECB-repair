@@ -161,6 +161,7 @@
 
         &-name {
             display: block;
+            align-self: center;
             margin-bottom: 15px;
             font-size: 14px;
             font-weight: 600;
@@ -177,6 +178,8 @@
         }
 
         &-date {
+            margin-bottom: 15px;
+            align-self: center;
             font-size: 10px;
             color: #979797;
         }
@@ -231,7 +234,7 @@
         .swiper-container-horizontal>.swiper-pagination-bullets,
         .swiper-pagination-custom,
         .swiper-pagination-fraction {
-            bottom: 0px;
+            bottom: 20px;
         }
     }
 }
@@ -279,11 +282,6 @@
     .second-page .reviews-block .swiper-button-next,
     .second-page .reviews-block .swiper-button-prev {
         top: 40%;
-    }
-}
-@media screen and (min-width:576px) {
-    .second-page .reviews-block-date {
-        margin-top: -11px;
     }
 }
 @media screen and (max-width:575px) {
