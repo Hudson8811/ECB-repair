@@ -215,7 +215,7 @@
         justify-content: center;
 
         @media screen and (max-width:576px) {
-            padding: 0px 15px;
+            padding: 0px;
         }
     }
 
@@ -262,11 +262,6 @@
 }
 
 .description-block {
-    @media screen and (max-width:576px){
-        .container{
-            width: calc(100% - 30px);
-        }
-    }
     .media-body {
         flex: auto;
     }
@@ -778,6 +773,11 @@
                     @media screen and (max-width:992px) {
                         padding-right: 15px;
                     }
+                    @media screen and (max-width:576px) {
+                        padding-right: 0px;
+                        padding-left: 0;
+                    }
+
                 }
 
                 &:nth-child(2) {
@@ -785,6 +785,10 @@
 
                     @media screen and (max-width:992px) {
                         padding-left: 15px;
+                    }
+                    @media screen and (max-width:576px) {
+                        padding-right: 0px;
+                        padding-left: 0;
                     }
                 }
             }

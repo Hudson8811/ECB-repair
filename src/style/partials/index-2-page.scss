@@ -18,7 +18,7 @@
         .col-lg-3 {
             padding: 0px 4px;
             @media screen and(max-width:576px){
-                padding: 0 15px;
+                padding: 0;
             }
         }
 
@@ -312,7 +312,7 @@
     }
 
     .second-page .services-item {
-        height: 210px;
+        height: 240px;
         overflow: hidden;
     }
 
