@@ -33,7 +33,6 @@
             transition: all 1s;
 
             background-color: #edfbfb;
-
             span {
                 z-index: 1;
                 display: block;
@@ -194,7 +193,7 @@
 
         .swiper-button-next,
         .swiper-button-prev {
-            top: 37%;
+    top: 37%;
             width: 46px;
             height: 46px;
             font-weight: bold;
@@ -290,9 +289,6 @@
     .second-page .reviews-block .swiper-button-next,
     .second-page .reviews-block .swiper-button-prev {
         top: 40%;
-    }
-    .second-page .reviews-block .swiper-container-horizontal>.swiper-pagination-bullets, .second-page .reviews-block .swiper-pagination-custom, .second-page .reviews-block .swiper-pagination-fraction{
-        bottom: 0
     }
 }
 
