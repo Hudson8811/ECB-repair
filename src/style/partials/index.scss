@@ -208,6 +208,9 @@
 .white-block {
     padding: 36px 28px;
     background-color: #fff;
+    @media screen and (max-width:991px) {
+        padding: 36px 15px;
+    }
 }
 
 .advantages-block {
@@ -837,6 +840,11 @@
             margin: 0 auto;
             margin-bottom: 10px;
         }
+        @media screen and (max-width:991px) {
+            input, button{
+                width: 100%;
+            }   
+        }
     }
 
     p {
@@ -855,7 +863,7 @@
         background-color: #0e96ff;
 
         @media screen and (max-width:576px) {
-            padding: 20px;
+            padding: 20px 0px;
         }
     }
 
