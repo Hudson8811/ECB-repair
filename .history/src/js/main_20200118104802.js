@@ -53,7 +53,7 @@ var swiper = new Swiper('.swiper-container:not(.swiper-container-2):not(.swiper-
     1920: {
       slidesPerView: 3,
       spaceBetween: 8,
-    }
+    },
   }
 });
 
@@ -77,13 +77,12 @@ var swiper = new Swiper('.swiper-container-brands', {
     1920: {
       slidesPerView: 5,
       spaceBetween: 8,
-    }
-
+    },
   }
 });
 
 var swiper = new Swiper('.swiper-container-2', {
-  autoHeight: true,
+  autoHeight:true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -104,7 +103,7 @@ var swiper = new Swiper('.swiper-container-2', {
     2500: {
       slidesPerView: 2,
       spaceBetween: 8,
-    }
+      },
   }
 });
 
