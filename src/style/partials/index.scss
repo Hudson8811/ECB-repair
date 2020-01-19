@@ -807,6 +807,9 @@
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         color: #fff;
+        @media screen and (max-width:576px){
+            line-height: 23px;
+        }
     }
 
     .form-group {
@@ -856,6 +859,10 @@
         width: 216px;
         max-width: calc(100% - 40px);
         margin: 0 auto;
+        @media screen and (max-width:992px){
+            width: auto;
+            max-width: calc(100% - 30px);
+        }
     }
 
     &-right {
