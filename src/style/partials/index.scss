@@ -118,11 +118,11 @@
             border-color: #000;
         }
 
-        @media screen and (min-width:1200px) {
-            width: 50% !important;
+        @media screen and (min-width:768px) {
+            width: calc(50% - .5rem) !important;
         }
 
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width:768px) {
             margin-right: 0 !important;
         }
 
@@ -134,8 +134,8 @@
     .orange-button {
         width: 100%;
 
-        @media screen and (min-width:1200px) {
-            width: 230px;
+        @media screen and (min-width:768px) {
+            width: 50%;
         }
     }
 
