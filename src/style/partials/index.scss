@@ -843,6 +843,11 @@
             margin: 0 auto;
             margin-bottom: 10px;
         }
+        @media screen and (max-width:992px) {
+            input, button{
+                width: 400px;
+            }   
+        }
         @media screen and (max-width:768px) {
             input, button{
                 width: 100%;
